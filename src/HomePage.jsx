@@ -32,6 +32,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Quantum Proof Section */}
+      <section className="py-24 px-6 bg-gray-950">
+        <h2 className="text-4xl font-bold text-center mb-12 text-yellow-300">🔐 Why QDAC is Quantum-Proof</h2>
+        <div className="max-w-5xl mx-auto text-white/80 text-lg space-y-6">
+          <p>
+            Traditional blockchains like Ethereum and Bitcoin rely on cryptographic signatures (ECDSA) that are vulnerable to quantum attacks.
+            With the rise of quantum computing, private keys could be exposed within seconds.
+          </p>
+          <p>
+            QDAC is designed with post-quantum cryptography at its core — using hash-based signatures (XMSS, SPHINCS+), zk-proofs, and lattice-based schemes
+            to ensure transactions remain secure even in a quantum era.
+          </p>
+          <p>
+            Unlike retrofits or bolt-on upgrades to legacy chains, QDAC is quantum-secure from the ground up.
+            This gives it a 10+ year technology edge.
+          </p>
+        </div>
+      </section>
+
+      {/* Architecture Overview */}
+      <section className="py-24 px-6 bg-black border-t border-gray-800">
+        <h2 className="text-4xl font-bold text-center mb-12 text-yellow-300">🧱 QDAC Architecture Overview</h2>
+        <div className="max-w-5xl mx-auto space-y-10 text-white/80 text-lg">
+          <div>
+            <h3 className="text-2xl font-bold text-yellow-300 mb-2">1️⃣ Core Layer</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Post-Quantum Cryptography (e.g., XMSS, SPHINCS+)</li>
+              <li>zkProof Integration (for private & verifiable transactions)</li>
+              <li>Consensus Engine (Proof-of-Stake + Quantum Randomness)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-yellow-300 mb-2">2️⃣ Middleware Layer</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Cross-chain Bridge (EVM ↔ QDAC ↔ Real World Chains)</li>
+              <li>Asset Locking & Verification (RWA Backing Logic)</li>
+              <li>Smart Contract Arbitration & Token Governance</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-yellow-300 mb-2">3️⃣ Application Layer</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>DEX & CEX built on QDAC liquidity protocol</li>
+              <li>Mobile Staking & Mining App</li>
+              <li>DACVerse Smart City, DAO tools, NFT Infra</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Ecosystem Modules */}
       <section className="py-24 px-6">
         <h2 className="text-4xl font-semibold text-center mb-16 text-yellow-300">⚙️ Ecosystem Highlights</h2>
@@ -62,8 +112,14 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-center py-8 text-sm text-gray-500 border-t border-gray-800">
-        © {new Date().getFullYear()} DACCoin (QDAC). All rights reserved.
+      <footer className="bg-black text-center py-10 text-sm text-gray-400 border-t border-gray-800">
+        <div className="mb-4">© {new Date().getFullYear()} DACCoin (QDAC). All rights reserved.</div>
+        <div className="flex justify-center space-x-6 text-white">
+          <a href="https://twitter.com/daccoinofficial" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">Twitter</a>
+          <a href="https://t.me/daccoinofficial" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">Telegram</a>
+          <a href="https://www.instagram.com/daccoinofficial" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">Instagram</a>
+          <a href="mailto:support@daccoin.one" className="hover:text-yellow-400 transition">Email</a>
+        </div>
       </footer>
     </div>
   );
