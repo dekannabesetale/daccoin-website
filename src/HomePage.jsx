@@ -14,15 +14,19 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="text-center py-32 px-6 bg-black bg-opacity-90 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 blur-xl bg-gradient-to-r from-yellow-500 to-yellow-300 animate-pulse" />
-        <h1 className="relative text-5xl md:text-7xl font-extrabold text-yellow-400 drop-shadow-lg">
+        {/* Animated or Video Background */}
+        <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm">
+          <source src="/bg-tech-loop.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/30 to-yellow-300/10 z-0 animate-pulse" />
+        <h1 className="relative text-5xl md:text-7xl font-extrabold text-yellow-400 drop-shadow-lg z-10">
           QDAC: Quantum-Proof Digital Assetrium Chain
         </h1>
-        <p className="relative text-xl md:text-2xl mt-6 max-w-3xl mx-auto text-white/80">
+        <p className="relative text-xl md:text-2xl mt-6 max-w-3xl mx-auto text-white/80 z-10">
           Redefining blockchain security with post-quantum protection, real-world assets,
           and mobile-native staking. Explore the DACVerse City, DAO governance, and decentralized finance.
         </p>
-        <div className="relative mt-8 flex justify-center gap-6">
+        <div className="relative mt-8 flex justify-center gap-6 z-10">
           <button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
             🚀 Read Whitepaper
           </button>
