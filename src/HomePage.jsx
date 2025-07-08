@@ -1,17 +1,11 @@
-import { motion } from "framer-motion";
-
 export default function HomePage() {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Hero Section */}
       <section className="text-center py-20 px-6">
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-bold text-yellow-400">
+        <h1 className="text-4xl md:text-6xl font-bold text-yellow-400">
           QDAC: Quantum-Proof Digital Assetrium Chain
-        </motion.h1>
+        </h1>
         <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto">
           Redefining blockchain security with post-quantum protection, real-world assets,
           and mobile-native staking. Explore the DACVerse City, DAO governance, and decentralized finance.
