@@ -1,7 +1,17 @@
-
 export default function HomePage() {
   return (
     <div className="bg-gradient-to-br from-black via-gray-900 to-black text-white min-h-screen">
+      {/* Header Navigation */}
+      <header className="flex justify-between items-center px-6 py-4 bg-black border-b border-yellow-500 shadow-lg sticky top-0 z-50">
+        <h1 className="text-2xl font-extrabold text-yellow-400">QDAC</h1>
+        <nav className="space-x-6 text-sm md:text-base">
+          <a href="https://scan.daccoin.one" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition">Explorer</a>
+          <a href="https://dacex.one" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition">Exchange</a>
+          <a href="#" className="text-white hover:text-yellow-400 transition">Whitepaper</a>
+          <a href="#" className="text-white hover:text-yellow-400 transition">Roadmap</a>
+        </nav>
+      </header>
+
       {/* Hero Section */}
       <section className="text-center py-32 px-6 bg-black bg-opacity-90 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 blur-xl bg-gradient-to-r from-yellow-500 to-yellow-300 animate-pulse" />
